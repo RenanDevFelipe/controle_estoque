@@ -1,0 +1,1 @@
+<script src="../sidebar/script/sidebar.js?=1"></script>
