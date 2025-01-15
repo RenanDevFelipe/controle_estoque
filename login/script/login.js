@@ -13,7 +13,11 @@ const Toast = Swal.mixin({
 $(document).ready(function () {
     $('#formLogin').submit(function (e) {
         e.preventDefault();
+        const LoginP = document.querySelector('.loginP');
+        const Loading = document.querySelector('.loading');
 
+        Loading.style.display = 'block'
+        LoginP.style.display = 'none'
 
         $.ajax({
             type: 'POST',
@@ -21,18 +25,23 @@ $(document).ready(function () {
             data: $(this).serialize(),
             dataType: 'json',
             success: function (response) {
-                if (response.success){
+                if (response.success) {
                     Toast.fire({
                         icon: "success",
                         title: response.success
                     });
 
+                    window.location.href = '/controle_estoque/dashboard'
 
-                }else{
+
+                } else {
                     Toast.fire({
                         icon: "error",
                         title: response.error
                     })
+
+                    Loading.style.display = 'none'
+                    LoginP.style.display = 'block'
                 }
             },
 
@@ -41,6 +50,9 @@ $(document).ready(function () {
                     icon: "error",
                     title: "Erro no Login " + status
                 });
+
+                Loading.style.display = 'none'
+                LoginP.style.display = 'block'
 
 
             }

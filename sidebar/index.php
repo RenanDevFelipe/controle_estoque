@@ -1,13 +1,19 @@
 <!-- SIDE BAR MENU -->
-<nav class="sidebar close">
+<?php 
+
+$current_page = $page_name;
+
+?>
+
+<nav class="sidebar">
         <header>
             <div class="image-text">
                 <span class="image">
-                    <img src="../upload/gerenciamento-de-projetos.png" alt="">
+                    <img src="/controle_estoque/upload/gerenciamento-de-projetos.png" alt="">
                 </span>
                 <div class="text logo-text">
-                    <span class="name">Renan Felipe</span>
-                    <span class="profession">Suporte N3</span>
+                    <span class="name"><?php echo $_SESSION['user_name'] ?></span>
+                    <span class="profession" style="font-size: 12px;"><?php echo $_SESSION['user_email'] ?></span>
                 </div>
             </div>
             <i class='bx bx-chevron-right toggle'></i>
@@ -15,16 +21,16 @@
         <div class="menu-bar">
             <div class="menu">
                 <ul class="menu-links">
-                    <li class="nav-link">
-                        <a href="#">
+                    <li class="nav-link" id="dashboard">
+                        <a class="<?= $current_page == 'Dashboard' ? 'active' : '' ?>">
                             <i class='bx bx-home-alt icon' ></i>
                             <span class="text nav-text">Dashboard</span>
                         </a>
                     </li>
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
-                            <span class="text nav-text">Revenue</span>
+                    <li class="nav-link" id="revenue">
+                        <a class="<?= $current_page == 'Produtos' ? 'active' : '' ?>">
+                            <i class='bx bx-package icon' ></i>
+                            <span class="text nav-text">Produtos</span>
                         </a>
                     </li>
                     <li class="nav-link">
@@ -54,9 +60,9 @@
                 </ul>
             </div>
             <div class="bottom-content">
-                <li class="">
-                    <a href="#">
-                        <i class='bx bx-log-out icon' ></i>
+                <li class="" id="logout">
+                    <a>
+                        <i class='bx bx-log-out icon'></i>
                         <span class="text nav-text">Logout</span>
                     </a>
                 </li>
@@ -74,5 +80,6 @@
             </div>
         </div>
     </nav>
+
 
     

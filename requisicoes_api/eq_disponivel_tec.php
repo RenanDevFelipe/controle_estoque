@@ -7,7 +7,7 @@ $dados = [
     'query' => '1',
     'oper' => '>=',
     'page' => '1',
-    'rp' => '10000',
+    'rp' => '50000',
     'sortname' => 'patrimonio.id',
     'sortorder' => 'desc'
 ];

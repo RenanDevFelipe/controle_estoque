@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/login.css?v=2">
+    <link rel="stylesheet" href="style/login.css?v=3">
     <link rel="stylesheet" href="../style/index.css?v=1">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -46,7 +46,11 @@
                     </div>
 
                     <div class="button-login">
-                        <button class="LoginButton">Log In</button>
+                        <button class="LoginButton">
+                            <p class="loginP">Log In</p>
+                            <div class="loading"></div>
+                        </button>
+                        
                     </div>
                 </form>
 

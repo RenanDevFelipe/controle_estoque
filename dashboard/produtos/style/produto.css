@@ -1,0 +1,17 @@
+.bd-productos {
+    & .buttons-adm-produtos {
+        display: flex;
+
+        & .box-bnt-adm {
+            display: flex;
+            align-items: center;
+
+            & .bnt-adm {
+                display: flex;
+                align-items: center;
+                padding: 4px;
+                gap: 0.3rem;
+            }
+        }
+    }
+}
