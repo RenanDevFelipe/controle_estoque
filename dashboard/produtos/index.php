@@ -11,7 +11,7 @@ $page_name = 'Produtos';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/produto.css">
+    <link rel="stylesheet" href="style/produto.css?v=1">
     <?php
     include_once '../../metas/meta_dashboard.php';
     ?>
@@ -40,13 +40,181 @@ $page_name = 'Produtos';
                         </div>
                     </div>
                     <div class="box-search">
-                        <i id="icone-pesquisa-produto"></i>
+                        <i id="icone-pesquisa-produto" class="bx bx-search"></i>
                         <input type='search' placeholder="Digite o Patrimonio + Enter">
                     </div>
 
-                    <div class="productos-container-bd">
 
+                    <div class="container-tb">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Produto</th>
+                                    <th>Quantidade</th>
+                                    <th>Preço Unitário</th>
+                                    <th>Categoria</th>
+                                    <th>Fornecedor</th>
+                                    <th>Data de Entrada</th>
+                                    <th>Status</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Monitor 24"</td>
+                                    <td>15</td>
+                                    <td>R$ 800,00</td>
+                                    <td>Eletrônicos</td>
+                                    <td>Tech Supplies</td>
+                                    <td>15/01/2025</td>
+                                    <td>Em Estoque</td>
+                                    <td class="actions">
+                                        <button class="details">Detalhes</button>
+                                        <button class="edit">Editar</button>
+                                        <button class="delete">Deletar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Teclado Mecânico</td>
+                                    <td>30</td>
+                                    <td>R$ 250,00</td>
+                                    <td>Periféricos</td>
+                                    <td>Key Masters</td>
+                                    <td>10/01/2025</td>
+                                    <td>Em Estoque</td>
+                                    <td class="actions">
+                                        <button class="details">Detalhes</button>
+                                        <button class="edit">Editar</button>
+                                        <button class="delete">Deletar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Cadeira Gamer</td>
+                                    <td>8</td>
+                                    <td>R$ 1200,00</td>
+                                    <td>Móveis</td>
+                                    <td>Comfort Line</td>
+                                    <td>08/01/2025</td>
+                                    <td>Em Estoque</td>
+                                    <td class="actions">
+                                        <button class="details">Detalhes</button>
+                                        <button class="edit">Editar</button>
+                                        <button class="delete">Deletar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Cadeira Gamer</td>
+                                    <td>8</td>
+                                    <td>R$ 1200,00</td>
+                                    <td>Móveis</td>
+                                    <td>Comfort Line</td>
+                                    <td>08/01/2025</td>
+                                    <td>Em Estoque</td>
+                                    <td class="actions">
+                                        <button class="details">Detalhes</button>
+                                        <button class="edit">Editar</button>
+                                        <button class="delete">Deletar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Cadeira Gamer</td>
+                                    <td>8</td>
+                                    <td>R$ 1200,00</td>
+                                    <td>Móveis</td>
+                                    <td>Comfort Line</td>
+                                    <td>08/01/2025</td>
+                                    <td>Em Estoque</td>
+                                    <td class="actions">
+                                        <button class="details">Detalhes</button>
+                                        <button class="edit">Editar</button>
+                                        <button class="delete">Deletar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Cadeira Gamer</td>
+                                    <td>8</td>
+                                    <td>R$ 1200,00</td>
+                                    <td>Móveis</td>
+                                    <td>Comfort Line</td>
+                                    <td>08/01/2025</td>
+                                    <td>Em Estoque</td>
+                                    <td class="actions">
+                                        <button class="details">Detalhes</button>
+                                        <button class="edit">Editar</button>
+                                        <button class="delete">Deletar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Cadeira Gamer</td>
+                                    <td>8</td>
+                                    <td>R$ 1200,00</td>
+                                    <td>Móveis</td>
+                                    <td>Comfort Line</td>
+                                    <td>08/01/2025</td>
+                                    <td>Em Estoque</td>
+                                    <td class="actions">
+                                        <button class="details">Detalhes</button>
+                                        <button class="edit">Editar</button>
+                                        <button class="delete">Deletar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Cadeira Gamer</td>
+                                    <td>8</td>
+                                    <td>R$ 1200,00</td>
+                                    <td>Móveis</td>
+                                    <td>Comfort Line</td>
+                                    <td>08/01/2025</td>
+                                    <td>Em Estoque</td>
+                                    <td class="actions">
+                                        <button class="details">Detalhes</button>
+                                        <button class="edit">Editar</button>
+                                        <button class="delete">Deletar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Cadeira Gamer</td>
+                                    <td>8</td>
+                                    <td>R$ 1200,00</td>
+                                    <td>Móveis</td>
+                                    <td>Comfort Line</td>
+                                    <td>08/01/2025</td>
+                                    <td>Em Estoque</td>
+                                    <td class="actions">
+                                        <button class="details">Detalhes</button>
+                                        <button class="edit">Editar</button>
+                                        <button class="delete">Deletar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Cadeira Gamer</td>
+                                    <td>8</td>
+                                    <td>R$ 1200,00</td>
+                                    <td>Móveis</td>
+                                    <td>Comfort Line</td>
+                                    <td>08/01/2025</td>
+                                    <td>Em Estoque</td>
+                                    <td class="actions">
+                                        <button class="details">Detalhes</button>
+                                        <button class="edit">Editar</button>
+                                        <button class="delete">Deletar</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
+
                 </div>
             </div>
         </section>
